@@ -2,7 +2,7 @@ footer {
   position: static;
   text-align: center;
   bottom: 0;
-  height: 10svh;
+  min-height: 10svh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

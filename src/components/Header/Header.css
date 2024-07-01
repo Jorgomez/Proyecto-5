@@ -1,5 +1,5 @@
 header {
-  height: 15svh;
+  min-height: 15svh;
   position: sticky;
   top: 0px;
   z-index: 11;
