@@ -11,7 +11,7 @@ export const templateNoughtsAndCrosses = (section) => {
   const boxPlayers = document.createElement('section')
   boxPlayers.className = 'flexContainer'
   boxPlayers.id = 'boxPlayers'
-  boxPlayers.innerHTML = `<h2> Play whit: </h2> 
+  boxPlayers.innerHTML = `<h2> Play with: </h2> 
   
 <div id='boxSelectPlayer'><button class='selectPlayer'>X</button> <p> Or</p> <button class='selectPlayer'>O</button></div> <p class='randerActivePlayer'></p> `
 

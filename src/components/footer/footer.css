@@ -1,4 +1,5 @@
 footer {
+  position: static;
   text-align: center;
   bottom: 0;
   height: 10svh;
