@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  bottom: 0;
+  height: 10svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: var(--spacing-m);
+}
+
+#ulContactFooter {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  min-width: 120px;
+  gap: 5px;
+}
+
+#ulContactFooter img {
+  width: 14px;
+}
+footer h3 {
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+}
+
+@media (max-width: 500px) {
+}

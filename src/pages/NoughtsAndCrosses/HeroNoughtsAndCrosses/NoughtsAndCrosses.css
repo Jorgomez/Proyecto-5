@@ -1,0 +1,136 @@
+#sectionNoughtsAndCrosses {
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  gap: 40px;
+}
+#boxPlayers {
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 400px;
+  min-height: 300px;
+  gap: 10px;
+}
+
+#boxSelectPlayer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+#boxSelectPlayer button {
+  width: 40%;
+  font-size: x-large;
+}
+#boxSelectPlayer p {
+  font-size: large;
+}
+.randerActivePlayer {
+  font-size: x-large;
+}
+#heroNoughtsAndCrosses {
+  margin: auto;
+  min-height: auto;
+  min-width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.boxToClick {
+  min-height: 150px;
+  min-width: 150px;
+  border: 0.5px solid #fff;
+  text-align: center;
+  font-size: 100px;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+#heroNoughtsAndCrosses .boxToClick:nth-child(1),
+#heroNoughtsAndCrosses .boxToClick:nth-child(2),
+#heroNoughtsAndCrosses .boxToClick:nth-child(3) {
+  border-top: none;
+}
+
+#heroNoughtsAndCrosses .boxToClick:nth-child(1),
+#heroNoughtsAndCrosses .boxToClick:nth-child(4),
+#heroNoughtsAndCrosses .boxToClick:nth-child(7) {
+  border-left: none;
+}
+
+#heroNoughtsAndCrosses .boxToClick:nth-child(3),
+#heroNoughtsAndCrosses .boxToClick:nth-child(6),
+#heroNoughtsAndCrosses .boxToClick:nth-child(9) {
+  border-right: none;
+}
+
+#heroNoughtsAndCrosses .boxToClick:nth-child(7),
+#heroNoughtsAndCrosses .boxToClick:nth-child(8),
+#heroNoughtsAndCrosses .boxToClick:nth-child(9) {
+  border-bottom: none;
+}
+#WinnerNougthsAndCrosses {
+  top: 25%;
+}
+#tieNougthsAndCrosses {
+  top: 25%;
+}
+
+@media (max-width: 950px) {
+  .boxToClick {
+    min-height: 110px;
+    min-width: 110px;
+    font-size: 80px;
+  }
+  #sectionNoughtsAndCrosses {
+    display: flex;
+    gap: 1px;
+  }
+}
+@media (max-width: 750px) {
+  #sectionNoughtsAndCrosses {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+  }
+  #boxPlayers {
+    justify-content: end;
+    min-width: 300px;
+    min-height: 100px;
+  }
+
+  #boxPlayers h2 {
+    font-size: medium;
+  }
+
+  #boxSelectPlayer button {
+    width: 40%;
+    font-size: medium;
+  }
+
+  .randerActivePlayer {
+    font-size: medium;
+  }
+
+  .boxToClick {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 400px) {
+  #boxSelectPlayer p {
+    font-size: medium;
+  }
+
+  .randerActivePlayer {
+    font-size: medium;
+  }
+
+  .boxToClick {
+    min-height: 100px;
+    min-width: 100px;
+    font-size: 50px;
+  }
+}

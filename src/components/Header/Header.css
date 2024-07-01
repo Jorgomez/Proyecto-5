@@ -1,0 +1,127 @@
+header {
+  height: 15svh;
+  position: sticky;
+  top: 0px;
+  z-index: 11;
+}
+
+#boxLogo-Button {
+  width: 10%;
+  justify-content: center;
+}
+nav {
+  width: 90%;
+}
+
+.game-list {
+  width: 90%;
+  justify-content: space-evenly;
+  font-size: 20px;
+  padding: var(--spacing-m);
+  transition: 0.5s;
+  background-color: #0078d0;
+  border: 0.5px solid;
+  border-radius: 56px;
+  color: #fff;
+  background-image: url('https://www.transparenttextures.com/patterns/basketball.png');
+  transform-style: preserve-3d;
+}
+li {
+  width: 33.3%;
+  text-align: center;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: scale(1.2);
+}
+
+.hidden {
+  display: none;
+}
+.boxSmallMenu {
+  position: relative;
+}
+#menuBar {
+  display: none;
+}
+.gamelistMenuBar {
+  position: absolute;
+  bottom: 10px;
+
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.game-list2 {
+  border-radius: 10px;
+  right: 0;
+  min-width: 250px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  background-image: url('https://www.transparenttextures.com/patterns/basketball.png');
+  transform-style: preserve-3d;
+  background-color: #c7c7c7;
+}
+
+.game-list2 li {
+  border-radius: 10px;
+  margin: auto;
+  font-size: 20px;
+  width: 80%;
+  background-color: #c7c7c7;
+
+  color: white;
+}
+
+@media (max-width: 700px) {
+  #boxLogo-Button {
+    width: 15%;
+    justify-content: center;
+  }
+  nav {
+    width: 80%;
+    margin: auto;
+  }
+  .game-list {
+    width: 80%;
+    justify-content: space-evenly;
+    font-size: 13px;
+  }
+
+  #juego3 > a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  #gameList {
+    display: none;
+  }
+
+  #menuBar {
+    display: flex;
+    margin-right: 10px;
+  }
+  header {
+    margin: auto;
+    width: 75%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 450px) {
+  #boxLogo-Button {
+    width: 10%;
+  }
+  /* .game-list {
+    width: 100%;
+
+    font-size: 13px;
+  } */
+}
