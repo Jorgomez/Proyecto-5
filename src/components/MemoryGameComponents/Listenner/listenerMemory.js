@@ -6,10 +6,13 @@ import {
 import { getGamesScores } from '../../LocalStorage/localStorage'
 
 export const turnCarts = (event, objet) => {
-  counterCartSelected()
+  if (event.target.classList.contains('founded')) {
+    return
+  }
   if (Counters.selectedCarts <= 2) {
     event.target.style.backgroundImage = `url(${objet.surfboard})`
     event.target.style.transform = 'rotateY(180deg)'
+    counterCartSelected()
   }
 
   basicGameLogic(event)

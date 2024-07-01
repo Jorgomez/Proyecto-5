@@ -27,6 +27,8 @@ export const basicGameLogic = (event) => {
       ) {
         Counters.puntuacion++
         Counters.selectedCarts = 0
+        cart1.target.classList.add('founded')
+        cart2.target.classList.add('founded')
       } else {
         ;(cart1.target.style.backgroundImage = `url('https://www.transparenttextures.com/patterns/basketball.png')`),
           (cart1.target.style.transform = 'rotateY(360deg)'),
