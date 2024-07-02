@@ -6,6 +6,12 @@ export const Counters = {
   oportunities: localStorageDataMG.oportunities || 10,
   puntuacion: localStorageDataMG.puntuacion || 0
 }
-export const counterCartSelected = () => {
-  Counters.selectedCarts++
+export const counterCartSelected = (event) => {
+  if (
+    !event.target.classList.contains('selected') &&
+    !event.target.classList.contains('founded')
+  ) {
+    Counters.selectedCarts++
+    event.target.classList.add('selected')
+  }
 }
